@@ -1,0 +1,570 @@
+/* ---------------------
+     MAIN STYLESHEET
+--------------------- */
+/* ---------------
+   MAP STYLES 
+--------------- */
+body {
+  margin: 0px;
+  padding: 0px;
+  font: normal 15px/20px Arial,sans-serif;
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+}
+
+.animate-start {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom 5s ease;
+       -o-animation: zoom 5s ease;
+          animation: zoom 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate-stl {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom-stl 5s ease;
+       -o-animation: zoom-stl 5s ease;
+          animation: zoom-stl 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate-stl2 {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom-stl2 5s ease;
+       -o-animation: zoom-stl2 5s ease;
+          animation: zoom-stl2 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate-munich {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom-munich 5s ease;
+       -o-animation: zoom-munich 5s ease;
+          animation: zoom-munich 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate-edi {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom-edi 5s ease;
+       -o-animation: zoom-edi 5s ease;
+          animation: zoom-edi 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate-sea {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom-sea 5s ease;
+       -o-animation: zoom-sea 5s ease;
+          animation: zoom-sea 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate-sea2 {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom-sea2 5s ease;
+       -o-animation: zoom-sea2 5s ease;
+          animation: zoom-sea2 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate-van {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom-van 5s ease;
+       -o-animation: zoom-van 5s ease;
+          animation: zoom-van 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate-end {
+  background: #eeeeee url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  -webkit-animation: zoom-end 5s ease;
+       -o-animation: zoom-end 5s ease;
+          animation: zoom-end 5s ease;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position: 0 0;
+  }
+
+  100% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes zoom {
+  0% {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+
+  100% {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position: 0 0;
+  }
+
+  100% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes zoom-end {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes zoom-end {
+  0% {
+    background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+}
+
+@keyframes zoom-end {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes zoom-stl {
+  0% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position: 0 0;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 50px 50px;
+  }
+}
+
+@-o-keyframes zoom-stl {
+  0% {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes zoom-stl {
+  0% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-position: 0 0;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 50px 50px;
+  }
+}
+
+@-webkit-keyframes zoom-stl2 {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 50px 50px;
+  }
+}
+
+@-o-keyframes zoom-stl2 {
+  0% {
+    background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes zoom-stl2 {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 50px 50px;
+  }
+}
+
+@-webkit-keyframes zoom-munich {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 50px 50px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: -900px 25px;
+  }
+}
+
+@-o-keyframes zoom-munich {
+  0% {
+    background-size: 200%;
+    background-position: 50px 50px;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: -900px 25px;
+  }
+}
+
+@keyframes zoom-munich {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 50px 50px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: -900px 25px;
+  }
+}
+
+@-webkit-keyframes zoom-edi {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: -900px 25px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: -800px 25px;
+  }
+}
+
+@-o-keyframes zoom-edi {
+  0% {
+    background-size: 200%;
+    background-position: -900px 25px;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: -800px 25px;
+  }
+}
+
+@keyframes zoom-edi {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: -900px 25px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: -800px 25px;
+  }
+}
+
+@-webkit-keyframes zoom-sea {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: -800px 25px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+}
+
+@-o-keyframes zoom-sea {
+  0% {
+    background-size: 200%;
+    background-position: -800px 25px;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: 25px 100px;
+  }
+}
+
+@keyframes zoom-sea {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: -800px 25px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+}
+
+@-webkit-keyframes zoom-sea2 {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 50px 50px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+}
+
+@-o-keyframes zoom-sea2 {
+  0% {
+    background-size: 200%;
+    background-position: 50px 50px;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: 25px 100px;
+  }
+}
+
+@keyframes zoom-sea2 {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 50px 50px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+}
+
+@-webkit-keyframes zoom-van {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 150px;
+  }
+}
+
+@-o-keyframes zoom-van {
+  0% {
+    background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: 25px 150px;
+  }
+}
+
+@keyframes zoom-van {
+  0% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 100px;
+  }
+
+  100% {
+    -webkit-background-size: 200% 200%;
+            background-size: 200%;
+    background-position: 25px 150px;
+  }
+}
+
+#postcards {
+  width: 33.3333%;
+  min-width: 320px;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 33.3333%;
+  float: right;
+}
+
+section {
+  padding: 7px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  -o-transition: background 500ms, color 500ms;
+     transition: background 500ms, color 500ms;
+  -moz-transition: background 500ms, color 500ms;
+  -webkit-transition: background 500ms, color 500ms;
+}
+
+section,
+section a {
+  color: #888;
+  color: rgba(128, 128, 128, 0);
+  background: #fff;
+  text-decoration: none;
+  text-shadow: #404040 0px 0px 4px;
+  background-image: -webkit-repeating-linear-gradient(315deg, #f29b91 0px, #f09290 30px, transparent 30px, transparent 50px, #83b3db 50px, #84adcb 80px, transparent 80px, transparent 100px);
+  background-image: -o-repeating-linear-gradient(315deg, #f29b91 0px, #f09290 30px, transparent 30px, transparent 50px, #83b3db 50px, #84adcb 80px, transparent 80px, transparent 100px);
+  background-image: repeating-linear-gradient(135deg, #f29b91 0px, #f09290 30px, transparent 30px, transparent 50px, #83b3db 50px, #84adcb 80px, transparent 80px, transparent 100px);
+  opacity: .5;
+}
+
+section.active {
+  color: #888;
+  text-shadow: none;
+  background-image: -webkit-repeating-linear-gradient(315deg, #f29b91 0px, #f09290 30px, transparent 30px, transparent 50px, #83b3db 50px, #84adcb 80px, transparent 80px, transparent 100px);
+  background-image: -o-repeating-linear-gradient(315deg, #f29b91 0px, #f09290 30px, transparent 30px, transparent 50px, #83b3db 50px, #84adcb 80px, transparent 80px, transparent 100px);
+  background-image: repeating-linear-gradient(135deg, #f29b91 0px, #f09290 30px, transparent 30px, transparent 50px, #83b3db 50px, #84adcb 80px, transparent 80px, transparent 100px);
+  opacity: 1;
+}
+
+section.active a {
+  color: #eee;
+}
+
+section.active small {
+  color: #aaa;
+}
+
+.section-inner {
+  margin: 7px;
+  padding: 20px;
+  background: #fff;
+  min-height: 200px;
+  position: relative;
+}
+
+.section-inner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: url("../images/postage.png") no-repeat top right 30px;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2.3333em;
+}
+
+h1,
+h2 {
+  margin: 0px 0px 20px 0px;
+  padding-top: 60px;
+  font-family: "Amatic SC", sans-serif;
+  letter-spacing: 2px;
+}
+
+p {
+  margin: 0px;
+  font-family: "Special Elite", serif;
+}
+
+#map {
+  width: 100%;
+  background: url("../images/map.svg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+          background-size: cover;
+}

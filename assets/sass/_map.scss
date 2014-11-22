@@ -1,0 +1,208 @@
+/* ---------------
+   MAP STYLES 
+--------------- */
+
+@mixin background-animate($keyframe) {
+   background: #eee url('../images/map.svg') no-repeat center center fixed;
+   background-size: 100%;
+   animation: $keyframe 5s ease;
+   -moz-animation-fill-mode: forwards;
+   -webkit-animation-fill-mode: forwards;
+}
+
+@mixin zoom($positionA, $positionB, $zoomStart) {
+ 	0% { 
+ 	  background-size: $zoomStart;
+ 	  background-position: $positionA; 
+ 	}
+
+ 	100% { 
+ 	  background-size: 200%; 
+ 	  background-position: $positionB;
+ 	}
+}
+
+$sea : 25px 100px;
+$stl : 50px 50px;
+$munich : -900px 25px;
+$edi : -800px 25px;
+$van : 25px 150px;
+
+
+body {
+  margin:0px;
+  padding:0px;
+  font:normal 15px/20px Arial,sans-serif;
+  background: #eee url('../images/map.svg') no-repeat center center fixed;
+  background-size: 100%;
+ }
+
+ .animate-start {
+   @include background-animate(zoom);
+ }
+
+ .animate-stl {
+ 	@include background-animate(zoom-stl);
+ }
+
+ .animate-stl2 {
+ 	@include background-animate(zoom-stl2);
+ }
+
+ .animate-munich {
+ 	@include background-animate(zoom-munich);
+ }
+
+ .animate-edi {
+ 	@include background-animate(zoom-edi);
+ }
+
+ .animate-sea {
+ 	@include background-animate(zoom-sea);
+ }
+
+ .animate-sea2 {
+ 	@include background-animate(zoom-sea2);
+ }
+
+ .animate-van {
+ 	@include background-animate(zoom-van);
+ }
+
+ .animate-end {
+ 	@include background-animate(zoom-end);
+ }
+
+@keyframes zoom {
+ 	 0% { 
+ 	  background-size: 100%;
+ 	  background-position: 0 0;
+ 	}
+
+ 	100% { 
+ 	  background-size: 100%; 
+ 	  background-position: 0 0;
+ 	}
+ }
+
+@keyframes zoom-end {
+ 	 0% { 
+ 	  background-size: 200%;
+ 	  background-position: $sea;
+ 	}
+
+ 	100% { 
+ 	  background-size: 100%; 
+ 	  background-position: 0 0;
+ 	}
+ }
+
+ @keyframes zoom-stl {
+ 	@include zoom(0 0, $stl, 100%);
+ }
+
+ @keyframes zoom-stl2 {
+ 	@include zoom($sea, $stl, 200%);
+ }
+
+ @keyframes zoom-munich {
+ 	@include zoom($stl, $munich, 200%);
+ }
+
+ @keyframes zoom-edi {
+ 	@include zoom($munich, $edi, 200%);
+ }
+
+ @keyframes zoom-sea {
+ 	@include zoom($edi, $sea, 200%);
+ }
+
+ @keyframes zoom-sea2 {
+ 	@include zoom($stl, $sea, 200%);
+ }
+
+ @keyframes zoom-van {
+ 	@include zoom($sea, $van, 200%);
+ }
+
+#postcards {
+  width:33.3333%;
+  min-width:320px;
+  position:relative;
+  padding-top:40px;
+  padding-bottom:33.3333%;
+  float: right;
+ }
+
+section {
+  padding: 7px;
+  margin-left:40px;
+  margin-bottom: 20px;
+  position:relative;
+  transition:background 500ms, color 500ms;
+  -moz-transition:background 500ms, color 500ms;
+  -webkit-transition:background 500ms, color 500ms;
+ }
+
+section,
+section a {
+  color:#888;
+  color:rgba(128,128,128,0);
+  background: #fff;
+  text-decoration:none;
+  text-shadow:rgba(64,64,64,1) 0px 0px 4px;
+  background-image: repeating-linear-gradient(135deg, #F29B91 0px, #F09290 30px, transparent 30px, transparent 50px, #83B3DB 50px, #84ADCB 80px, transparent 80px, transparent 100px);
+  opacity: .5;
+  }
+
+section.active {
+  color:#888;
+  text-shadow: none;
+    background-image: repeating-linear-gradient(135deg, #F29B91 0px, #F09290 30px, transparent 30px, transparent 50px, #83B3DB 50px, #84ADCB 80px, transparent 80px, transparent 100px);
+  opacity: 1;
+}
+
+section.active a { color:#eee; }
+
+section.active small { color:#aaa; }
+
+.section-inner {
+  margin: 7px;
+  padding: 20px;
+  background: #fff;
+  min-height: 200px;
+  position: relative;
+}
+
+.section-inner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: url('../images/postage.png') no-repeat top right 30px;
+  background-size: contain;
+}
+
+h1 { font-size:3em; line-height:1em; }
+
+h2 { font-size:2.3333em; }
+
+h1,
+h2 { 
+  margin:0px 0px 20px 0px;  
+  padding-top: 60px; 
+  font-family: "Amatic SC", sans-serif; 
+  letter-spacing: 2px;
+}
+
+p { margin:0px; font-family: "Special Elite", serif;}
+
+#map {
+	width: 100%;
+	background: url('../images/map.svg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+@media(min-width: 768px) {
+
+}

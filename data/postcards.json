@@ -1,0 +1,70 @@
+{
+	"postcards": [
+		{
+			"title"   : "Patrick & Erika",
+			"class"   : "start",
+			"date"    : "A tale of many cities",
+			"content" : "Scroll ▼"
+		},
+		{
+			"title"   : "St. Louis",
+			"class"	  : "stl",
+			"date"    : "August 2009",
+			"content" : "Patrick and Erika meet at Riddles Penultimate (RIP) in St. Louis just before their last year of college. Patrick hangs around all evening. Erika is confused."
+		},
+		{
+			"title"   : "St. Louis",
+			"class"	  : "stl",
+			"date"    : "Fall 2009-Spring 2010",
+			"content" : "Erika and Patrick find they like each other a whole lot and they date off and on again throughout senior year. Erika can't computer and Patrick can't German, so it was hard to get much of anywhere while working on senior projects."
+		},
+		{
+			"title"   : "Munich",
+			"class"	  : "munich",
+			"date"    : "May 2010",
+			"content" : "Graduation. Erika moves to Germany and Patrick stays in St. Louis; they amicably end things, figuring that life was taking them in very different directions."
+		},
+		{
+			"title"   : "Munich",
+			"class"	  : "munich",
+			"date"    : "December 2010",
+			"content" : "They start chatting again. Then they start chatting a lot. Eventually, Patrick plans a trip to Europe and by February they decided to try the long distance thing after all."
+		},
+		{
+			"title"   : "Edinburgh",
+			"class"	  : "edi",
+			"date"    : "March 2011",
+			"content" : "They meet up in Edinburgh and travel together for six weeks. At the end of the trip, they haven't gotten on each others' nerves and have only run out of things to say once or twice. In fact, they've admitted by now that they're pretty into each other."
+		},
+		{
+			"title"   : "Seattle",
+			"class"	  : "sea",
+			"date"    : "May 2011",
+			"content" : "Patrick moves to Seattle and Erika wonders what she should do. Many Skype dates ensue."
+		},
+		{
+			"title"   : "St. Louis",
+			"class"	  : "stl2",
+			"date"    : "August 2012",
+			"content" : "Erika returns from Germany, moves to St. Louis, and starts plotting her move to Seattle. She gets into the Masters of Library and Information Science program at the University of Washington and leaves for Seattle at the end of the school year."
+		},
+		{
+			"title"   : "Seattle",
+			"class"	  : "sea2",
+			"date"    : "June 2012-June 2014",
+			"content" : "Assorted adventures. Erika tells Patrick not to propose while she's still a student."
+		},
+		{
+			"title"   : "Vancouver",
+			"class"	  : "van",
+			"date"    : "June 2014",
+			"content" : "Erika gets a job and graduates. To celebrate, she and Patrick go to Vancouver. Five days after graduation, he proposes."
+		},
+		{
+			"title"   : "Seattle",
+			"class"	  : "start",
+			"date"    : "August 8, 2014",
+			"content" : "All of P+E's family and friends come to Seattle for an awesome celebration."
+		}
+	]
+}
