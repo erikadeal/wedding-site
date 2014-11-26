@@ -97,11 +97,12 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          livereload: true
+          livereload: false
         },
         files: [
           'assets/css/main.css',
           'assets/js/scripts.js',
+          'assets/js/app.js',
           'assets/js/map.js'
         ]
       }

@@ -1,0 +1,7 @@
+/* MIXINS */
+
+@mixin hero-image($image) {
+	text-align: center;
+	background: url($image) no-repeat center center;
+	background-size: cover;
+}

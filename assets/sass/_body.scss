@@ -1,0 +1,20 @@
+/* Default body styles */
+
+*, html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background: $white;
+	margin: 0;
+    padding: 0;
+}
+
+.container {
+  @include outer-container;
+  text-align: center;
+}

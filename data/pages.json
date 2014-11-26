@@ -1,0 +1,38 @@
+{
+	"home": [
+		{
+			"title": "Erika and Patrick",
+			"subtitle": "Are getting married 8.8.14",
+			"content": "We're so glad you're joining us"
+		}
+
+	],
+	"festivities": [
+		{
+			"title": "Festivities",
+			"subtitle": "This is some info about the ceremony",
+			"content": "The ceremony will be taking place in Pioneer Square."
+		}
+	],
+	"travel": [
+		{
+			"title": "Visiting Seattle",
+			"subtitle": "We promise it doesn't always rain",
+			"content": "We know that you're probably traveling to Seattle, so..."
+		}
+	],
+	"registry": [
+		{
+			"title": "Registry",
+			"subtitle": "Awkwardly asking for things",
+			"content": "We're so glad you're joining us"
+		}
+	],
+	"todo": [
+		{
+			"title": "Eat & Do",
+			"subtitle": "Make the most of your time in Seattle",
+			"content": ""
+		}
+	]
+}

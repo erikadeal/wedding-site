@@ -1,0 +1,42 @@
+/* Typography */
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue/BebasNeue-webfont.eot');
+    src: url('../fonts/bebasneue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: $copy;
+	font-size: $copy-reg;
+	line-height: 1.6667em;
+	color: $navy;
+}
+
+h1, h2, h3, h4 {
+	font-family: $titles;
+	font-weight: 300;
+}
+
+h1, .h1 {
+	font-size: $title1;
+	margin: 0;
+	padding: 1em 0;
+}
+
+h2, .h2 {
+	font-size: $title2;
+}
+
+h3, .h3 {
+	font-size: $title3;
+}
+
+h4, .h4 {
+	font-size: $copy-reg;
+}

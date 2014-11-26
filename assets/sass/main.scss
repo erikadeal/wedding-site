@@ -1,10 +1,14 @@
 /* ---------------------
      MAIN STYLESHEET
 --------------------- */
-
+@import 'normalize';
 @import 'variables';
 @import 'mixins';
-@import 'general';
+@import 'typography';
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import 'body';
+@import 'buttons';
 @import 'header';
 @import 'content';
-@import 'map';
+/*@import 'map';*/

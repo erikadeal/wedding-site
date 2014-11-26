@@ -1,0 +1,49 @@
+/* CONTENT */
+
+.hero {
+	@include hero-image('../images/test.jpeg');
+	position: relative;
+	z-index: -1;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: radial-gradient(rgba($navy, .85), rgba($navy, 0));
+	}
+}
+
+.festivities .hero {
+	@include hero-image('../images/ceremony.jpg');
+}
+
+.travel .hero {
+	@include hero-image('../images/travel.jpg');
+}
+
+.to-do .hero {
+	@include hero-image('../images/food.jpg');
+}
+
+.hero h1 {
+	font-weight: 400;
+	text-shadow: 1px 1px 5px $navy;
+	letter-spacing: 1px;
+	font-size: 6em;
+}
+
+.hero h2 {
+	float: none;
+	margin: 0 auto;
+	line-height: 2em;
+}
+
+.hero .text {
+	color: $white;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
