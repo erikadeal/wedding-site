@@ -16,7 +16,7 @@ $(document).ready(function() {
 var setHeight = function (){
     var height = $(window).height();
     $('.hero').attr("style", "height: " + height + "px;");
-}
+};
 
 /*******************
     NAVIGATION
@@ -46,7 +46,7 @@ var addClickEvents = function() {
 
         $('body').attr('class', ref);
     });
-}
+};
 
 /******************
      CONTENT
@@ -68,5 +68,5 @@ PageContent.prototype.getPageContent = function(ref) {
                 setHeight();
         });
     });
-}
+};
 
