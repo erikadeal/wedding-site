@@ -1,7 +1,27 @@
 /* MIXINS */
 
-@mixin hero-image($image) {
-	text-align: center;
-	background: url($image) no-repeat center center;
-	background-size: cover;
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 1080px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 460em)  { @content; }
+  }
+}
+
+%center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
 }

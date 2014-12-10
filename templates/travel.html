@@ -3,15 +3,38 @@
 This is the header template for all pages
 -->
 
-<script id="travel-hero" type="text/template">
-	{{#travel}}
-		<h1>{{title}}</h1>
-	{{/travel}}
-</script>
-
 <script id="travel" type="text/template">
 	{{#travel}}
-		<h2>{{subtitle}}</h2>
-		<p>{{content}}</p>
+		<header>
+			<h1>{{subtitle}}</h1>
+		</header>
+		<div class="content">
+			<p>{{content}}</p>
+		</div>
+		<div class="tabs">
+			<nav>
+				<ul>
+					<li id="hotel">Hotel</li>
+					<li id="rec">Recreation</li>
+					<li id="culture">Culture</li>
+					<li id="food">Food & Drink</li>
+				</ul>
+			</nav>
+			<div class="tab-container">
+				<div name="hotel" class="tab active">
+					<p>{{hotel}}</p>
+				</div>
+				{{#activities}}
+					<div name="{{name}}" class="tab">
+						<p>{{blurb}}</p>
+						<ul>
+							{{#items}}
+							<li>{{item}}</li>
+							{{/items}}
+						</ul>
+					</div>
+				{{/activities}}
+			</div>
+		</div>
 	{{/travel}}
 </script>

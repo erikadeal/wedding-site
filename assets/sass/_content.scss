@@ -1,49 +1,192 @@
 /* CONTENT */
 
-.hero {
-	@include hero-image('../images/test.jpeg');
-	position: relative;
-	z-index: -1;
+$content-pad: 0 3em;
 
-	&:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		background: radial-gradient(rgba($navy, .85), rgba($navy, 0));
+article header {
+	background: url("../images/party.jpeg") no-repeat bottom left;
+	background-size: cover;
+	padding: $content-pad;
+	margin-bottom: 2em;
+}
+
+article h1 {
+	padding-top: 3em;
+	padding-bottom: .5em;
+	color: $white;
+}
+
+.content {
+	padding: $content-pad;
+}
+
+/* HOME */
+
+.home .container {
+	background: url("../images/story/cover.jpg") no-repeat top center;
+	background-size: cover;
+	height: 100%;
+}
+
+.announcement {
+	color: $white;
+}
+
+.announcement span {
+	display: block;
+	line-height: 1.5em;
+	font-family: $titles;
+
+	&:first-child {
+		font-family: $copy;
+		font-style: italic;
+		line-height: 2em;
 	}
 }
 
-.festivities .hero {
-	@include hero-image('../images/ceremony.jpg');
+/* STORY */
+
+.story article header {
+	background: url("../images/story/morocco.jpg") no-repeat center center;
+	background-size: cover;
+	margin-bottom: 0;
 }
 
-.travel .hero {
-	@include hero-image('../images/travel.jpg');
-}
-
-.to-do .hero {
-	@include hero-image('../images/food.jpg');
-}
-
-.hero h1 {
-	font-weight: 400;
-	text-shadow: 1px 1px 5px $navy;
-	letter-spacing: 1px;
-	font-size: 6em;
-}
-
-.hero h2 {
-	float: none;
-	margin: 0 auto;
-	line-height: 2em;
-}
-
-.hero .text {
-	color: $white;
+figure {
+	@include span-columns(4);
 	position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+figure img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+figcaption {
+	position: absolute;
+	background: rgba($navy, .8);
+	color: $white;
+	padding: 10px 20px;
+	height: 100%;
+
+	opacity: 1;
+	left: 0;
+	top: 83%;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition:    all 0.6s ease;
+	-o-transition:      all 0.6s ease;
+	transition:      all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  top: 0;
+}
+
+figcaption .date {
+	display: block;
+	font-family: $titles;
+	font-size: $title3;
+	letter-spacing: 2px;
+}
+
+/* WHEN AND WHERE */
+
+.festivities article {
+	@include span-columns(12);
+}
+
+.festivities .content {
+	@include span-columns(6 of 12);
+}
+
+.map {
+	@include span-columns(6 of 12);
+	@include omega;
+	margin-top: 1.5em;
+}
+
+.map iframe {
+	border: 3px solid $red;
+}
+
+/* TRAVEL */
+
+.travel article header {
+	background: url("../images/seattle.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.tabs {
+	margin: $content-pad;
+	margin-top: 4em;
+	background: #eee;
+}
+
+.tabs nav {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+
+.tabs nav ul {
+	width: 100%;
+	padding: 0;
+	display: table-row;
+}
+
+.tabs nav li {
+	display: table-cell;
+	width: 25%;
+	background: $teal;
+	color: $white;
+	padding: .7em 0;
+	cursor: pointer;
+
+	&:hover {
+		background: darken($teal, 10%);
+	}
+}
+
+#rec {
+	background: $gold;
+
+	&:hover {
+		background: darken($gold, 10%);
+	}
+}
+
+#culture {
+	background: $green;
+
+	&:hover {
+		background: darken($green, 10%);
+	}
+}
+
+#food {
+	background: $red;
+
+	&:hover {
+		background: darken($red, 10%);
+	}
+}
+
+.tab {
+	padding: $content-pad;
+	padding-bottom: 3em;
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+/* REGISTRY */
+
+.registry article header {
+	background: url("../images/blur.jpeg") no-repeat bottom left;
+	background-size: cover;
 }

@@ -3,15 +3,17 @@
 This is the header template for all pages
 -->
 
-<script id="festivities-hero" type="text/template">
-	{{#festivities}}
-		<h1>{{title}}</h1>
-	{{/festivities}}
-</script>
-
 <script id="festivities" type="text/template">
 	{{#festivities}}
-		<h2>{{subtitle}}</h2>
-		<p>{{content}}</p>
+		<header>
+			<h1>{{subtitle}}</h1>
+		</header>
+		<div class="content">
+			<p>{{p1}}</p>
+			<p>{{p2}}</p>
+		</div>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.352658431668!2d-122.33401400000007!3d47.59983200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x010f2bc2e24aa936!2sAXIS+Pioneer+Square!5e0!3m2!1sen!2sus!4v1417894997728" width="300" height="300" frameborder="0"></iframe>
+		</div>
 	{{/festivities}}
 </script>

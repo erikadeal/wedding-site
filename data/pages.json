@@ -3,36 +3,93 @@
 		{
 			"title": "Erika and Patrick",
 			"subtitle": "Are getting married 8.8.14",
-			"content": "We're so glad you're joining us"
+			"content": "Hi! We’re really excited about this wedding shindig, and we especially look forward to you joining us. Please take a look around, get all the information you need for a great weekend in Seattle, and don’t forget to RSVP (invitations pending)!",
+			"her": "Hi, I’m Erika! I live in Seattle and am a lit major turned web developer. I love to sing (the more Latin, the better), read lots of books, and fulfill the Seattle-tech-nerd-in-coffee-shops stereotype. I probably need another line here.",
+			"him": "Patrick needs a bio"
 		}
 
 	],
 	"festivities": [
 		{
-			"title": "Festivities",
-			"subtitle": "This is some info about the ceremony",
-			"content": "The ceremony will be taking place in Pioneer Square."
+			"title": "Where & When",
+			"subtitle": "We're having a party",
+			"p1": "The ceremony kicks off at 5:30pm at Axis in Pioneer Square. We’ll tie the knot and then stay put for drinks, dinner, and dancing afterward.",
+			"p2": "There happens to be a Taylor Swift concert about two blocks away at the same time, so we HIGHLY recommend you take a bus or cab to the venue if you are not able to walk (plus, we like safety and want everyone to have a good time). There are lots of busses to that part of town. Google will show you the way."
 		}
 	],
 	"travel": [
 		{
-			"title": "Visiting Seattle",
-			"subtitle": "We promise it doesn't always rain",
-			"content": "We know that you're probably traveling to Seattle, so..."
+			"title": "Travel",
+			"subtitle": "A weekend in the Emerald City",
+			"content": "If you haven’t been to Seattle before, you’re in luck! August is the best month to visit because it hardly ever rains. We have a couple of suggestions of where to stay, plus some favorite things to do if you have some extra time.",
+			"hotel": "The Arctic Club in Downtown Seattle is old, pretty, and only three blocks from our venue! We will be reserving a set of rooms here, but it’s a little too soon, so please stand by as we make arrangements.\r\n\rIf you want something a little more budget friendly, there is also the (_____). It’s still close to all of Seattle’s sights as well as the venue.",
+			"activities": [
+				{
+					"name": "rec",
+					"blurb": "The weather will be great",
+					"items": [
+						{"item": "Alki Beach"},
+						{"item": "Gasworks Park"},
+						{"item": "Golden Gardens"},
+						{"item": "Rent a boat on Lake Union"},
+						{"item": "Underground Tour"}
+					]
+				}, 
+				{
+					"name": "culture",
+					"blurb": "These have our stamp of approval.",
+					"items": [
+						{"item": "Pike Place Market"},
+						{"item": "Seattle Asian Art Museum"},
+						{"item": "Seattle Public Library (seriously, it's SO COOL"},
+						{"item": "MOHAI & Center for Wooden Boats"},
+						{"item": "Fremont Sunday Market"}
+					]
+				}, 
+				{
+					"name": "food",
+					"blurb": "Nom",
+					"items": [
+						{"item": "Shiro's or Musashi's for great sushi"},
+						{"item": "Any brewery, really"},
+						{"item": "...everything"}
+					]
+				}
+			]
 		}
 	],
 	"registry": [
 		{
 			"title": "Registry",
-			"subtitle": "Awkwardly asking for things",
-			"content": "We're so glad you're joining us"
+			"subtitle": "Registry",
+			"content": "We know that Seattle is a big trip for most of you, and what we want most of all is for you to be here and celebrate with us. But if you still want to get us something shiny, we have a registry that you can check out below:"
 		}
 	],
-	"todo": [
+	"story": [
 		{
-			"title": "Eat & Do",
-			"subtitle": "Make the most of your time in Seattle",
-			"content": ""
+			"title": "The usual story",
+			"cards": [
+				{
+					"img": "assets/images/story/washu.jpg",
+					"date": "August 2009",
+					"text": "We met at Riddles Penultimate (RIP) just before senior year. Deva, one of the bridesmaids, had a fateful birthday party..."
+				},
+				{
+					"img": "assets/images/story/washu.jpg",
+					"date": "May 2010",
+					"text": "We hit it off and dated on and off throughout senior year. Projects and futures were stressful, so when we graduated, we thought we were parting ways."
+				},
+				{
+					"img": "assets/images/story/europe.jpg",
+					"date": "Fall 2010",
+					"text": "Erika moved to Munich and Patrick stayed in St Louis. We started chatting again in the fall..."
+				},
+				{
+					"img": "assets/images/story/hawaii.jpg",
+					"date": "December 2012",
+					"text": "Undeterred, we kept going on adventures and scheming about how to get to the same city."
+				}
+			]
 		}
 	]
 }

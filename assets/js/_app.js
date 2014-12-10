@@ -12,11 +12,11 @@ $(document).ready(function() {
 /******************
      GENERAL
 ******************/
-
+/*
 var setHeight = function (){
     var height = $(window).height();
-    $('.hero').attr("style", "height: " + height + "px;");
-};
+    $('header').attr("style", "height: " + height + "px;");
+};*/
 
 /*******************
     NAVIGATION
@@ -37,14 +37,21 @@ PageNav.prototype.populate = function(ref) {
 var addClickEvents = function() {
     $('nav li a').click(function() {
         var rel = $(this).attr("rel");
-        window.location.hash = rel;
+        $('.current').removeClass('current');
+        $(this).addClass('current');
+      //  window.location.hash = rel;
 
         var ref = rel.slice(1);
         $('.hero .text').empty();
-        $('.container').empty();
+        $('article').empty();
         var page = new PageContent(ref);
 
         $('body').attr('class', ref);
+        console.log(ref);
+    });
+
+    $('.brand a').click(function() {
+        $('body').attr('class', 'home');
     });
 };
 
@@ -63,10 +70,20 @@ PageContent.prototype.getPageContent = function(ref) {
             .done(function () {
                 var heroRef = ref + '-hero'; 
                 $('.hero .text').mustache(heroRef, data);
-                $('.container').mustache(ref, data);
+                $('article').mustache(ref, data);
 
-                setHeight();
+                if (ref === 'travel') {
+                    addHotelTabs();
+                }
         });
     });
 };
 
+var addHotelTabs = function() {
+    $('.tabs nav li').click(function() {
+        var rel = $(this).attr('id');
+        var dest = $('div[name="' + rel + '"]');
+        $('.active').removeClass('active');
+        dest.addClass('active');
+    });
+};

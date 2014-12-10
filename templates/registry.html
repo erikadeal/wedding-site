@@ -3,15 +3,13 @@
 This is the header template for all pages
 -->
 
-<script id="registry-hero" type="text/template">
-	{{#registry}}
-		<h1>{{title}}</h1>
-	{{/registry}}
-</script>
-
 <script id="registry" type="text/template">
 	{{#registry}}
-		<h2>{{subtitle}}</h2>
-		<p>{{content}}</p>
+		<header>
+			<h1>{{subtitle}}</h1>
+		</header>
+		<div class="content">
+			<p>{{content}}</p>
+		</div>
 	{{/registry}}
 </script>

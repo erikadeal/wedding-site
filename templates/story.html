@@ -1,0 +1,20 @@
+<!--
+[story.html]
+-->
+
+<script id="story" type="text/template">
+	{{#story}}
+		<header>
+			<h1>{{title}}</h1>
+		</header>
+		{{#cards}}
+			<figure>
+				<img src="{{img}}"/>
+				<figcaption>
+					<span class="date">{{date}}</span>
+					{{text}}
+				</figcaption>
+			</figure>
+		{{/cards}}
+	{{/story}}
+</script>

@@ -402,6 +402,7 @@ th {
 /* VARIABLE */
 /* Colors */
 /* Fonts */
+/* Breakpoints */
 /* MIXINS */
 /* Typography */
 @font-face {
@@ -412,14 +413,15 @@ th {
   font-style: normal;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "PT Serif", serif;
   font-size: 1em;
   line-height: 1.6667em;
   color: #223041;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "bebas_neueregular", sans-serif;
+  letter-spacing: 3px;
   font-weight: 300;
 }
 
@@ -461,152 +463,343 @@ html {
           box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
 
 body {
-  background: #F2F2F2;
+  background: #fff;
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: block;
 }
-
-.container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.container:after {
+body:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* HEADER */
-header {
+.container {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  font-family: "Raleway", sans-serif;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 9999;
-}
-header:last-child {
+  width: 74.41059%;
   margin-right: 0;
 }
+.container:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 1080px) {
+  .container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-right: 0;
+  }
+  .container:last-child {
+    margin-right: 0;
+  }
+}
 
-.brand {
+.home .container {
+  text-align: center;
+}
+
+/* BUTTONS & LINKS */
+/* HEADER */
+.page-header {
   float: left;
   display: block;
-  margin-right: 2.35765%;
+  width: 25.58941%;
+  background: #223041;
+  color: #fff;
+  height: 100%;
+  position: relative;
+}
+.page-header:last-child {
   width: 23.23176%;
 }
-.brand:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1080px) {
+  .page-header {
+    float: left;
+    display: block;
+    width: 17.05961%;
+  }
+  .page-header:last-child {
+    width: 14.70196%;
+  }
 }
 
-.brand a {
-  color: #F2F2F2;
-  background: #73AF8A;
-  text-decoration: none;
-  font-size: 2.5em;
-  display: block;
-  width: 100px;
-  padding: 35px 0;
-  border-radius: 50%;
-  text-align: center;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-
-nav {
-  margin-top: 20px;
-  width: 100%;
-  background: rgba(34, 48, 65, 0.75);
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 1em 0;
-  text-align: right;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 2em;
-  color: #F2F2F2;
-  font-size: 1.25em;
-}
-
-/* CONTENT */
-.hero {
-  text-align: center;
-  background: url("../images/test.jpeg") no-repeat center center;
-  -webkit-background-size: cover;
-          background-size: cover;
-  position: relative;
-  z-index: -1;
-}
-.hero:before {
-  content: '';
+.header-inner {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  background: -webkit-radial-gradient(rgba(34, 48, 65, 0.85), rgba(34, 48, 65, 0));
-  background: -o-radial-gradient(rgba(34, 48, 65, 0.85), rgba(34, 48, 65, 0));
-  background: radial-gradient(rgba(34, 48, 65, 0.85), rgba(34, 48, 65, 0));
 }
 
-.festivities .hero {
+.brand {
   text-align: center;
-  background: url("../images/ceremony.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-          background-size: cover;
 }
 
-.travel .hero {
-  text-align: center;
-  background: url("../images/travel.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-          background-size: cover;
+.brand a {
+  color: #fff;
+  background: #42826C;
+  text-decoration: none;
+  font-size: 2.5em;
+  line-height: 3em;
+  padding: .5em .3em;
+  border-radius: 50%;
 }
 
-.to-do .hero {
-  text-align: center;
-  background: url("../images/food.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-          background-size: cover;
-}
-
-.hero h1 {
-  font-weight: 400;
-  text-shadow: 1px 1px 5px #223041;
-  letter-spacing: 1px;
-  font-size: 6em;
-}
-
-.hero h2 {
-  float: none;
-  margin: 0 auto;
-  line-height: 2em;
-}
-
-.hero .text {
-  color: #F2F2F2;
+nav {
+  font-family: "bebas_neueregular", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-align: right;
   position: relative;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+nav ul {
+  list-style-type: none;
+  margin-right: 18px;
+}
+
+nav li {
+  margin: 0 0 1em 0;
+}
+
+nav li a {
+  border-bottom: 3px solid #223041;
+}
+nav li a:hover {
+  cursor: pointer;
+  color: gold;
+  border-bottom: 3px solid #FFC861;
+}
+nav li a.current {
+  color: gold;
+  border-bottom: 3px solid #FFC861;
+}
+
+/* CONTENT */
+article header {
+  background: url("../images/party.jpeg") no-repeat bottom left;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 0 3em;
+  margin-bottom: 2em;
+}
+
+article h1 {
+  padding-top: 3em;
+  padding-bottom: .5em;
+  color: #fff;
+}
+
+.content {
+  padding: 0 3em;
+}
+
+/* HOME */
+.home .container {
+  background: url("../images/story/cover.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100%;
+}
+
+.announcement {
+  color: #fff;
+}
+
+.announcement span {
+  display: block;
+  line-height: 1.5em;
+  font-family: "bebas_neueregular", sans-serif;
+}
+.announcement span:first-child {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  line-height: 2em;
+}
+
+/* STORY */
+.story article header {
+  background: url("../images/story/morocco.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin-bottom: 0;
+}
+
+figure {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+figure:last-child {
+  margin-right: 0;
+}
+
+figure img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+figcaption {
+  position: absolute;
+  background: rgba(34, 48, 65, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  height: 100%;
+  opacity: 1;
+  left: 0;
+  top: 83%;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  top: 0;
+}
+
+figcaption .date {
+  display: block;
+  font-family: "bebas_neueregular", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+/* WHEN AND WHERE */
+.festivities article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+.festivities article:last-child {
+  margin-right: 0;
+}
+
+.festivities .content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.festivities .content:last-child {
+  margin-right: 0;
+}
+
+.map {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0;
+  margin-top: 1.5em;
+}
+.map:last-child {
+  margin-right: 0;
+}
+
+.map iframe {
+  border: 3px solid #C84663;
+}
+
+/* TRAVEL */
+.travel article header {
+  background: url("../images/seattle.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.tabs {
+  margin: 0 3em;
+  margin-top: 4em;
+  background: #eee;
+}
+
+.tabs nav {
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+
+.tabs nav ul {
+  width: 100%;
+  padding: 0;
+  display: table-row;
+}
+
+.tabs nav li {
+  display: table-cell;
+  width: 25%;
+  background: #42826C;
+  color: #fff;
+  padding: .7em 0;
+  cursor: pointer;
+}
+.tabs nav li:hover {
+  background: #316050;
+}
+
+#rec {
+  background: #FFC861;
+}
+#rec:hover {
+  background: #ffb62e;
+}
+
+#culture {
+  background: #A5C77F;
+}
+#culture:hover {
+  background: #8cb75c;
+}
+
+#food {
+  background: #C84663;
+}
+#food:hover {
+  background: #a9324d;
+}
+
+.tab {
+  padding: 0 3em;
+  padding-bottom: 3em;
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+
+/* REGISTRY */
+.registry article header {
+  background: url("../images/blur.jpeg") no-repeat bottom left;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 /*@import 'map';*/

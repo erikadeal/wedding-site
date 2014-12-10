@@ -1,16 +1,25 @@
 /* HEADER */
 
-header {
-	@include span-columns(12);
-	font-family: $titles;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 9999;
+.page-header {
+	@include span-columns(3 of 12, block-collapse);
+	background: $navy;
+	color: $white;
+	height: 100%;
+	position: relative;
+
+	@include media($desk) {
+		@include span-columns(2 of 12, block-collapse);
+	}
+}
+
+.header-inner {
+	@include abs-pos(0, auto, auto, 0);
+	width: 100%;
+	height: 100%;
 }
 
 .brand {
-	@include span-columns(3);
+	text-align: center;
 }
 
 .brand a {
@@ -18,31 +27,41 @@ header {
 	background: $teal;
 	text-decoration: none;
 	font-size: $title2;
-	display: block;
-	width: 100px;
-	padding: 35px 0;
+	line-height: 3em;
+	padding: .5em .3em;
 	border-radius: 50%;
-	text-align: center;
-	margin-left: 5px;
-	margin-bottom: 5px;
 }
 
 nav {
-	margin-top: 20px;
-	width: 100%;
-	background: rgba($navy, .75);
+	font-family: $titles;
+	font-size: $title3;
+	letter-spacing: 2px;
+	text-align: right;
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 1em 0;
-	text-align: right;
+	margin-right: 18px;
 }
 
 nav li {
-	display: inline-block;
-	margin-right: 2em;
-	color: $white;
-	font-size: $copy-lg;
+	margin: 0 0 1em 0;
+}
+
+nav li a {
+	border-bottom: 3px solid $navy;
+
+	&:hover {
+		cursor: pointer;
+		color: gold;
+		border-bottom: 3px solid $gold;
+	}
+
+	&.current {
+		color: gold;
+		border-bottom: 3px solid $gold;
+	}
 }

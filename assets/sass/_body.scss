@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -12,9 +16,20 @@ body {
 	background: $white;
 	margin: 0;
     padding: 0;
+    height: 100%;
+    @include row();
 }
 
 .container {
-  @include outer-container;
-  text-align: center;
+  @include span-columns(9);
+  @include omega;
+
+  @include media($desk) {
+	@include span-columns(10);
+	@include omega;
+  }
+}
+
+.home .container {
+	text-align: center;
 }
